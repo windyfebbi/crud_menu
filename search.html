@@ -1,0 +1,74 @@
+<style>
+  .container {
+    align-items: center;
+    justify-content: center;
+  }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    float: left;
+  }
+</style>
+<body>
+  <div class="container">
+    <div class="image">
+      <img src="https://lh3.googleusercontent.com/a-/AD_cMMQH863TvZ93oeaWBiNsfHfoUoKHn33QjNkXfllfIRQbyA=s64-c">
+    </div>
+    <div class="text">
+      <h4 class="text-center mb-3" >Pencarian Data Mutasi</h4>
+    </div>
+  </div>
+</body>
+
+
+<div class="form-group">
+  <div class="input-group mb-3">
+    <input type="text" class="form-control" id="searchInput" placeholder="Cari Nama Pengusul">
+    <div class="input-group-append">
+      <span class="input-group-text" id="searchCounter"></span>
+    </div>
+  </div>
+</div>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col" class="text-center">#</th>
+      <th scope="col" class="text-center">No. Agenda</th>
+      <th scope="col" class="text-center">CDPW</th>
+      <th scope="col" class="text-center">Nama Pengusul</th>
+      <th scope="col" class="text-center">NIP</th>
+      <th scope="col" class="text-center">No. Telepon</th>
+      <th scope="col" class="text-center">Sekolah Asal</th>
+      <th scope="col" class="text-center">Sekolah Tujuan</th>
+      <th scope="col" class="text-center">Mapel Diampu</th>
+      <th scope="col" class="text-center">Status</th>
+      <th scope="col" class="text-center"></th>
+    </tr>
+  </thead>
+  <tbody id="searchResults">
+    
+  </tbody>
+</table>
+
+<template id="rowTemplate">
+  <tr class="result-box">
+      <th class="mutasiID text-center" scope="row"></th>
+      <td class="noAgenda"></td>
+      <td class="cdpw"></td>
+      <td class="nama"></td>
+      <td class="nip"></td>
+      <td class="telp"></td>
+      <td class="sekolahAsal"></td>
+      <td class="sekolahTujuan"></td>
+      <td class="mapel"></td>
+      <td class="status"></td>
+      <td class="text-center"><button type="button" class="btn btn-outline-dark edit-button btn-sm">Edit</button></td>
+      <td class="text-center">
+        <div class="btn-group" role="group">
+          <button type="button" class="btn btn-danger delete-button d-none btn-sm">Confirm</button>    
+          <button type="button" class="btn btn-outline-dark before-delete-button btn-sm" data-button-state="delete">Delete</button>
+        </div>
+      </td>
+    </tr>
+</template>

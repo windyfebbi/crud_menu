@@ -1,0 +1,142 @@
+<h4 class="text-center mb-3">Input Data Mutasi</h4>
+
+<div class="input-mutasi-form">
+  <div class="form-group mb-3">
+    <label for="no-agenda" >Nomor Agenda</label>
+    <input type="number" class="form-control" id="no-agenda" required>
+  </div>
+  <div class="form-group mb-3">
+    <label for="tgl-agenda" >Tanggal Agenda</label>
+    <input oninput="this.value = this.value.toUpperCase()" / type="text" class="form-control" id="tgl-agenda" placeholder="17 AGUSTUS 1945">
+  </div>
+  <div class="form-group mb-3">
+    <label for="tgl-masuk">Tanggal Masuk</label>
+    <input oninput="this.value = this.value.toUpperCase()" / type="text" class="form-control" id="tgl-masuk" placeholder="17 AGUSTUS 1945">
+  </div>   
+  <div class="form-group mb-3">
+    <label for="cdpw">CDPW</label>
+    <select id="cdpw" class="form-control">
+      <option value="pilih">-- Pilih CDPW --</option>
+      <option value="1">I</option>
+      <option value="2">II</option>
+      <option value="3">III</option>
+      <option value="4">IV</option>
+      <option value="5">V</option>
+      <option value="6">VI</option>
+      <option value="7">VII</option>
+      <option value="8">VIII</option>
+      <option value="9">IX</option>
+      <option value="10">X</option>
+      <option value="11">XI</option>
+      <option value="12">XII</option>
+      <option value="13">XIII</option>
+    </select>
+  </div>   
+  <div class="form-group mb-3">
+    <label for="ts-cadin">Tanggal Surat Cabang Dinas</label>
+    <input oninput="this.value = this.value.toUpperCase()" / type="text" class="form-control" id="ts-cadin" placeholder="17 AGUSTUS 1945">
+  </div>   
+  <div class="form-group mb-3">
+    <label for="ns-cadin">Nomor Surat Cabang Dinas</label>
+    <input oninput="this.value = this.value.toUpperCase()" / type="text" class="form-control" id="ns-cadin">   
+  </div>
+  <div class="form-group mb-3">
+    <label for="tslb-asal">Tanggal Surat Lolos Butuh Sekolah Asal</label>
+    <input oninput="this.value = this.value.toUpperCase()" / type="text" class="form-control" id="tslb-asal" placeholder="17 AGUSTUS 1945">
+  </div>   
+  <div class="form-group mb-3">
+    <label for="nslb-asal">Nomor Surat Lolos Butuh Sekolah Asal</label>
+    <input oninput="this.value = this.value.toUpperCase()" / type="text" class="form-control" id="nslb-asal">   
+  </div> 
+  <div class="form-group mb-3">
+    <label for="tslb-tujuan">Tanggal Surat Lolos Butuh Sekolah Tujuan</label>
+    <input oninput="this.value = this.value.toUpperCase()" / type="text" class="form-control" id="tslb-tujuan" placeholder="17 AGUSTUS 1945">
+  </div>   
+  <div class="form-group mb-3">
+    <label for="nslb-tujuan">Nomor Surat Lolos Butuh Sekolah Tujuan</label>
+    <input oninput="this.value = this.value.toUpperCase()" / type="text" class="form-control" id="nslb-tujuan">
+  </div> 
+  <div class="form-group mb-3">
+    <label for="nama" >Nama Pengusul</label>
+    <input oninput="this.value = this.value.toUpperCase()" / type="text" class="form-control" id="nama" required>
+  </div>
+  <div class="form-group mb-3">
+    <label for="nip">NIP</label>
+    <input type="number" class="form-control" id="nip" maxlength = "18" required>
+  </div>   
+  <div class="form-group mb-3">
+    <label for="no-telp">No.Telp</label>
+    <input type="number" class="form-control" id="no-telp" placeholder="08xxx" required>
+  </div> 
+  <div class="form-group mb-3">
+    <label for="npsn-asal">NPSN Sekolah Asal</label>
+    <input type="number" class="form-control" id="npsn-asal" maxlength = "8">
+  </div>   
+  <div class="form-group mb-3">
+    <label for="sekolah-asal">Nama Sekolah Asal</label>
+    <input oninput="this.value = this.value.toUpperCase()" / type="text" class="form-control" id="sekolah-asal" required>   
+  </div> 
+  <div class="form-group mb-3">
+    <label for="npsn-tujuan">NPSN Sekolah Tujuan</label>
+    <input type="number" class="form-control" id="npsn-tujuan" maxlength = "8">
+  </div>   
+  <div class="form-group mb-3">
+    <label for="sekolah-tujuan">Nama Sekolah Tujuan</label>
+    <input oninput="this.value = this.value.toUpperCase()" / type="text" class="form-control" id="sekolah-tujuan" required>
+  </div> 
+  <div class="form-group mb-3">
+    <label for="mapel" >Mata Pelajaran Diampu</label>
+    <input oninput="this.value = this.value.toUpperCase()" / type="text" class="form-control" id="mapel" required>
+  </div>
+  <div class="form-group mb-3">
+    <label for="tgl-verif">Tanggal Verifikasi</label>
+    <input oninput="this.value = this.value.toUpperCase()" / type="text" class="form-control" id="tgl-verif" placeholder="17 AGUSTUS 1945">
+  </div>   
+  <div class="form-group mb-3">
+    <label for="petugas-verif">Petugas Verifikasi</label>
+    <select id="petugas-verif" class="form-control">
+      <option value="pilih">-- Pilih PIC --</option>
+      <option value="nur">NUR FAJARIAH, S.Pd., M.M.</option>
+      <option value="sri">SRI MULYATI, S.E</option>
+      <option value="ferli">FERLIA TRESNAWATI, S.Pd</option>
+    </select>
+  </div> 
+  <div class="form-group mb-3">
+    <label for="kelengkapan">Kelengkapan Berkas</label>
+    <select id="kelengkapan" class="form-control">
+      <option value="pilih">-- Pilih Kelengkapan --</option>
+      <option value="l">LENGKAP</option>
+      <option value="tl">TIDAK LENGKAP</option>
+    </select>
+  </div>   
+  <div class="form-group mb-3">
+    <label for="keterangan">Keterangan</label>
+    <input oninput="this.value = this.value.toUpperCase()" / type="text" class="form-control" id="keterangan">
+  </div> 
+  <div class="form-group mb-3">
+    <label for="nota-pertimbangan">Nota Pertimbangan</label>
+    <select id="nota-pertimbangan" class="form-control">
+      <option value="pilih">-- Status Nota Pertimbangan --</option>
+      <option value="st">SUDAH TERBIT</option>
+      <option value="p">PENDING</option>
+      <option value="dl">DALAM PROSES</option>
+      <option value="d">DITOLAK</option>
+      <option value="b">BATAL</option>
+    </select>
+  </div>   
+  <div class="form-group mb-3">
+    <label for="status">Status</label>
+    <select id="status" class="form-control">
+      <option value="pilih">-- Pilih Prioritas --</option>
+      <option value="p1">PRIORITAS 1</option>
+      <option value="p2">PRIORITAS 2</option>
+      <option value="p3">PRIORITAS 3</option>
+    </select>
+  </div> 
+
+  <button class="btn btn-primary" id="input-mutasi-button">Simpan</button>
+</div>
+
+<div class="alert alert-success invisible mt-3" id="save-success-message" role="alert">
+  Data Telah Ditambahkan!
+</div>
